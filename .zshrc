@@ -68,7 +68,11 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(
+    git 
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -102,7 +106,7 @@ source $ZSH/oh-my-zsh.sh
 export PATH=$(brew --prefix openvpn)/sbin:$PATH
 
 # Git home
-GIT_DIRECTORY_HOME=$HOME/git/
+export GIT_DIRECTORY_HOME=$HOME/git
 
 # Local utilities
 if [ -d "$GIT_DIRECTORY_HOME/macos-scripts" ] ; then
