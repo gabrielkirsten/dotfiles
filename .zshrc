@@ -112,6 +112,7 @@ export GIT_DIRECTORY_HOME=$HOME/git
 if [ -d "$GIT_DIRECTORY_HOME/macos-scripts" ] ; then
   PATH="$PATH:$GIT_DIRECTORY_HOME/macos-scripts/commands"
   PATH="$PATH:$GIT_DIRECTORY_HOME/macos-scripts/confluent-5.5.1/bin"
+  PATH="$PATH:/usr/local/opt/libpq/bin"
 fi
 
 # Java versions
