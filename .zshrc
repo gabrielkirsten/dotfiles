@@ -111,7 +111,7 @@ export GIT_DIRECTORY_HOME=$HOME/git
 # Local utilities
 if [ -d "$GIT_DIRECTORY_HOME/macos-scripts" ] ; then
   PATH="$PATH:$GIT_DIRECTORY_HOME/macos-scripts/commands"
-  PATH="$PATH:$GIT_DIRECTORY_HOME/macos-scripts/confluent-5.5.1/bin"
+  PATH="$PATH:$GIT_DIRECTORY_HOME/macos-scripts/confluent-6.2.1/bin"
   PATH="$PATH:/usr/local/opt/libpq/bin"
 fi
 
@@ -123,3 +123,5 @@ alias j13="export JAVA_HOME=`/usr/libexec/java_home -v 13`"
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/gabrielkirsten/.sdkman"
 [[ -s "/Users/gabrielkirsten/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/gabrielkirsten/.sdkman/bin/sdkman-init.sh"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
