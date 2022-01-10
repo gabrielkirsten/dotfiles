@@ -115,10 +115,17 @@ if [ -d "$GIT_DIRECTORY_HOME/macos-scripts" ] ; then
   PATH="$PATH:/usr/local/opt/libpq/bin"
 fi
 
+export EDITOR='vim'
+
 # Java versions
 alias j8="export JAVA_HOME=`/usr/libexec/java_home -v 1.8`"
 alias j11="export JAVA_HOME=`/usr/libexec/java_home -v 11`"
 alias j13="export JAVA_HOME=`/usr/libexec/java_home -v 13`"
+
+# Git commands
+alias adog="git log --all --decorate --oneline --graph"
+alias gits="git status"
+alias gitp="git pull"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/gabrielkirsten/.sdkman"
